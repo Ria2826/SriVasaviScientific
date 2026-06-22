@@ -27,7 +27,7 @@ try{
 
 const res=await fetch(
 
-`${process.env.NEXT_PUBLIC_API_URL}/api/products/${params.id}`
+`https://srivasaviscientific-1.onrender.com/api/products/${params.id}`
 
 );
 
