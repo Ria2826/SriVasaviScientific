@@ -17,7 +17,6 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Sri Vasavi Scientific Solutions",
-
   description:
     "Laboratory chemicals, reagents, herbal extracts and scientific solutions",
 
@@ -26,19 +25,11 @@ export const metadata: Metadata = {
     "chemical supplier",
     "scientific solutions",
     "CAS products",
-    "pharmaceutical chemicals",
-    "research chemicals",
-    "industrial chemicals",
-    "scientific reagents",
-    "Sri Vasavi Scientific Solutions"
   ],
 
-  icons: {
-    icon: "/logo.png",
-  },
   verification: {
-    google: "TPjatayGivX-7tmL2Mi2i0J7Wg890mJrshAcZpeky2Y"
-  }
+    google: "TPjatayGivX-7tmL2Mi2i0J7Wg890mJrshAcZpeky2Y",
+  },
 };
 
 export default function RootLayout({
