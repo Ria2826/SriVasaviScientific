@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   ],
 
   verification: {
-    google: "TPjatayGivX-7tmL2Mi2i0J7Wg890mJrshAcZpeky2Y",
-  },
+    google: "TPjatayGivX-7tmL2Mi2i0J7Wg890mJrshAcZpeky2Y"
+  }
 };
 
 export default function RootLayout({
