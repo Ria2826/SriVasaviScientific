@@ -25,7 +25,7 @@ const fetchProduct=async()=>{
 
 try{
 
-const res=await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`)
+const res=await fetch(`https://srivasaviscientific-1.onrender.com/api/products`)
 
 const data=await res.json();
 
