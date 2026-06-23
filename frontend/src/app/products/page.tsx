@@ -11,7 +11,7 @@ export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState("All Products");
 
   useEffect(() => {
-    fetch(`https://srivasaviscientific-1.onrender.com/api/products`)
+    fetch("https://srivasaviscientific-1.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
