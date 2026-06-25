@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   ],
 
   verification: {
-    google: "TPjatayGivX-7tmL2Mi2i0J7Wg890mJrshAcZpeky2Y"
-  }
-};
+    google: "eNA_7ccTYuU-EIIzwJ-OKQp8B_nq5Ky8_WmT9f4c9Ro"
+  },
+}
 
 export default function RootLayout({
   children,
