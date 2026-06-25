@@ -130,56 +130,28 @@ workbook.Sheets[sheetName]
 
 products=sheet.map((row)=>({
 
-productName:
-row["Product Name"] || "",
+productName: row["NAME "] || row["NAME"] || "",
 
 casNo:
-row["CAS No"] || "",
+row["CAS#"] ||
+row["CAS"] ||
+"",
 
 category:
-row["Category"] ||
+row["CATAGORY"] ||
 "General Chemicals",
 
 grade:
-row["Grade"] ||
+row["GRADE"] ||
 "Scientific Grade",
 
-quantity:
-row["Quantity"] ||
-"Available",
+quantity:"Available",
 
 
-specifications:[
 
-{
-parameter:"Purity",
-value:
-row["Purity"] ||
-"Not Available"
-},
 
-{
-parameter:"Appearance",
-value:
-row["Appearance"] ||
-"Not Available"
-},
 
-{
-parameter:"Storage",
-value:
-row["Storage"] ||
-"Room Temperature"
-},
 
-{
-parameter:"Molecular Weight",
-value:
-row["Molecular Weight"] ||
-"Not Available"
-}
-
-]
 
 }));
 
