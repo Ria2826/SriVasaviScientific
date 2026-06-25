@@ -6,7 +6,8 @@ const cors = require("cors");
 
 const app = express();
 const productAutoFetch=require("./routes/productAutoFetch");
-
+const uploadFile=
+require("./routes/uploadFile");
 // Middleware
 app.use(cors());
 
@@ -73,7 +74,10 @@ app.use(
 "/api/excel",
 excelUploadRoutes
 );
-
+app.use(
+"/api/products",
+uploadFile
+);
 app.use("/api/products",productAutoFetch);
 
 // Default route
