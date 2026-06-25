@@ -28,10 +28,9 @@ export const metadata: Metadata = {
   ],
 
   verification: {
-    google: "eNA_7ccTYuU-EIIzwJ-OKQp8B_nq5Ky8_WmT9f4c9Ro"
+    google: 'eNA_7ccTYuU-EIIzwJ-OKQp8B_nq5Ky8_WmT9f4c9Ro',
   },
 }
-
 export default function RootLayout({
   children,
 }: Readonly<{
