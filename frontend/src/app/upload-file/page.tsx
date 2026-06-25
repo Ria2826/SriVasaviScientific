@@ -4,7 +4,7 @@ import {useState} from "react";
 
 export default function UploadFile(){
 
-const [file,setFile]=useState(null);
+const [file,setFile]=useState<File | null>(null);
 
 const upload=async()=>{
 
