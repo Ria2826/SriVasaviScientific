@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   ],
 
   verification: {
-    google: 'eNA_7ccTYuU-EIIzwJ-OKQp8B_nq5Ky8_WmT9f4c9Ro',
+    google: 'bxl_hV9TQmDVmhFL-hf0bLY2IZKXiIbjfIzGrKu0kkE',
   },
 }
 export default function RootLayout({
