@@ -1,64 +1,27 @@
-import { MetadataRoute } from "next";
-
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-
-const baseUrl =
-"https://sri-vasavi-scientific.vercel.app";
-
-let products=[];
-
-try{
-
-const res=await fetch(
-"https://srivasaviscientific-1.onrender.com/api/products",
-{
-cache:"no-store"
-}
-);
-
-products=await res.json();
-
-}
-catch(error){
-
-console.log(error);
-
-}
-
-const productUrls=
-products.map((product:any)=>({
-
-url:`${baseUrl}/products/${product._id}`,
-
-lastModified:new Date(),
-
-}));
-
-
-return [
-
-{
-url:baseUrl,
-lastModified:new Date(),
-},
-
-{
-url:`${baseUrl}/products`,
-lastModified:new Date(),
-},
-
-{
-url:`${baseUrl}/about`,
-lastModified:new Date(),
-},
-
-{
-url:`${baseUrl}/contact`,
-lastModified:new Date(),
-},
-
-...productUrls
-
-];
-
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://sri-vasavi-scientific.vercel.app</loc>
+    <lastmod>2026-06-25T13:47:08.332Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://sri-vasavi-scientific.vercel.app/products</loc>
+    <lastmod>2026-06-25T13:47:08.332Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sri-vasavi-scientific.vercel.app/about</loc>
+    <lastmod>2026-06-25T13:47:08.332Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sri-vasavi-scientific.vercel.app/contact</loc>
+    <lastmod>2026-06-25T13:47:08.332Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
